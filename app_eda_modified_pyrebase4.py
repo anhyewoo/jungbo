@@ -1,5 +1,5 @@
 import streamlit as st
-import pyrebase as pyrebase4
+import pyrebase4
 import time
 import io
 import pandas as pd
@@ -20,7 +20,7 @@ firebase_config = {
     "appId": "1:812186368395:web:be2f7291ce54396209d78e"
 }
 
-firebase = pyrebase4.initialize_app(firebase_config)
+firebase = pyrebase.initialize_app(firebase_config)
 auth = firebase.auth()
 firestore = firebase.database()
 storage = firebase.storage()
